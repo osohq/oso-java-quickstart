@@ -5,19 +5,13 @@ import java.io.*;
 import java.net.InetSocketAddress;
 
 public class Server implements HttpHandler {
-
   private Oso oso;
 
-
-
   public Server() throws Exception {
-
     oso = new Oso();
-
+    oso.registerClass(Expense);
     oso.loadFile("src/expenses.polar");
-
   }
-
 
   private void respond(HttpExchange exchange, String message, int code) throws IOException {
     exchange.sendResponseHeaders(code, message.length() + 1);
