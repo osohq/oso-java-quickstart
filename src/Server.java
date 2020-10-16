@@ -10,7 +10,7 @@ public class Server implements HttpHandler {
   public Server() throws Exception {
     oso = new Oso();
     oso.registerClass(Expense.class);
-    oso.loadFile("src/expenses.polar");
+    oso.loadFile("expenses.polar");
   }
 
   private void respond(HttpExchange exchange, String message, int code) throws IOException {
