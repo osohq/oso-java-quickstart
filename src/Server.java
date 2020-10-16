@@ -9,7 +9,7 @@ public class Server implements HttpHandler {
 
   public Server() throws Exception {
     oso = new Oso();
-    oso.registerClass(Expense);
+    oso.registerClass(Expense.class);
     oso.loadFile("src/expenses.polar");
   }
 
