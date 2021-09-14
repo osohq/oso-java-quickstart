@@ -9,7 +9,7 @@ import quickstart.Models.User;
 
 public class Server {
     public static void main(String[] args) throws IOException {
-        Javalin app = Javalin.create().start(5000);
+        Javalin app = Javalin.create();
         Oso oso = new Oso();
         oso.registerClass(User.class, "User");
         oso.registerClass(Repository.class, "Repository");
@@ -28,5 +28,6 @@ public class Server {
                 ctx.result(String.format("<h1>Whoops!</h1><p>Repo named %s was not found</p>", name));
             }
         });
+        app.start(5000);
     }
 }

@@ -8,8 +8,8 @@ This project uses [Maven](https://maven.apache.org/) to manage dependencies. The
 steps to get the example running are:
 
 1. Clone this repository.
-2. Install dependencies: `mvn install`
-3. Run the server: `mvn exec:java -Dexec.mainClass="com.osohq.quickstart.Server"`
+2. Install dependencies: `make install`
+3. Run the server: `make run`
 
 ## Make some changes
 
