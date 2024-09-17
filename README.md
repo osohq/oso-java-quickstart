@@ -10,7 +10,7 @@ If you’re building authorization for more than one service or want to share a 
 
 Follow along [here](https://docs.osohq.com/java/getting-started/quickstart.html).
 
-## Instructions
+## Oso Java Quickstart Instructions
 
 This project uses [Maven](https://maven.apache.org/) to manage dependencies. The
 steps to get the example running are:
