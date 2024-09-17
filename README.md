@@ -6,10 +6,6 @@ We deprecated the legacy Oso open source library in December 2023. We have plans
 
 If you’re building authorization for more than one service or want to share a policy across multiple applications, read how to get started with [Oso Cloud](https://www.osohq.com/docs).
 
-# Oso Java Quickstart
-
-Follow along [here](https://docs.osohq.com/java/getting-started/quickstart.html).
-
 ## Oso Java Quickstart Instructions
 
 This project uses [Maven](https://maven.apache.org/) to manage dependencies. The
